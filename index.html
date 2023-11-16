@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario de Encuesta</h1>
+    <p id="description">Por favor, llena este formulario.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre">
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Ingresa tu email">
+
+        <label id="number-label" for="number">Número:</label>
+        <input type="number" id="number" name="number" min="1" max="100" placeholder="Ingresa un número">
+
+        <label for="dropdown">Elige una opción:</label>
+        <select id="dropdown">
+            <option value="">Selecciona una opción</option>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+        </select>
+
+        <p>Elige una opción:</p>
+        <input type="radio" id="opcion1" name="opcion" value="opcion1">
+        <label for="opcion1">Opción 1</label><br>
+        <input type="radio" id="opcion2" name="opcion" value="opcion2">
+        <label for="opcion2">Opción 2</label><br>
+
+        <p>Selecciona todas las que apliquen:</p>
+        <input type="checkbox" id="casilla1" name="casilla1" value="casilla1">
+        <label for="casilla1">Casilla 1</label><br>
+        <input type="checkbox" id="casilla2" name="casilla2" value="casilla2">
+        <label for="casilla2">Casilla 2</label><br>
+
+        <label for="comments">Comentarios adicionales:</label><br>
+        <textarea id="comments"></textarea><br>
+
+        <button type='submit' id='submit'>Enviar</button>
+    </form>
+</body>
+</html>
