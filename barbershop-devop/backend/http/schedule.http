@@ -1,0 +1,24 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImE3M2QxZTFiLWEzZjItNDMxMS1iYzllLTNhMzBiYTI3NGQ5NyIsImlhdCI6MTcxNzY1MTQ4NCwiZXhwIjoxNzE3NjU1MDg0fQ.jSqTlUPoyX-c8BAlxcRBAfezIgz7ShfwdzDXZbIThag
+
+###
+PATCH http://localhost:3000/api/schedule/43
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "initial_start_date": "1970-01-02T01:00:00Z",
+  "interval": 60
+}
+###
+
+GET http://localhost:3000/api/schedule/122bff6c-7b6c-481e-aceb-47a43ebd8b8f
+Content-Type: application/json
+###
+
+GET http://localhost:3000/api/schedule/available-hours/d6cac3a7-a629-4805-b784-83f346655229/1970-01-02T13:00:00
+Content-Type: application/json
+###
+
+POST http://localhost:3001/api/schedule/9860043d-7d5e-4742-b5ad-9bb8e168e406
+Content-Type: application/json
+###
